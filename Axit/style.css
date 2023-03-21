@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url(/Axit/fonts/raleway/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url(/Axit/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-width: 1170px;
+    padding: 0 15px;
+    
+}
+.menu_tabs{
+    
+    min-width: 1170px;
+    display: flex;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 99px 170px 0 170px;
+    text-align: center;
+}
+.tab{
+    border-bottom: 1px solid #C6CBCD;
+    padding: 10px 81px;
+    
+}
+.tab.first{
+    border: 1px solid #C6CBCD;
+    border-bottom: none;
+    border-radius: 5px 5px 0px 0px;
+    box-sizing: content-box;
+    
+}
+.tab.empty{
+width: 550px;
+}
+.content_tabs{
+    margin: 0 170px;
+    border: 1px solid #C6CBCD;
+    border-top: none;
+}
+.title_tabs{
+    padding: 40px 0;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.875em;
+    line-height: 41px;
+    color: #000000;
+}
+.text_tabs{
+    max-width: 570px;
+    margin: 27px 30px 0 0;
+}
+.text_tabs p{
+    text-align: left;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 21px;
+    color: #000000;
+
+}
+.btn_tabs{
+    margin-top: 27px;
+    width: 270px;
+    height: 58px;
+    background: #EC7979;
+    display: block;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1.125em;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+.content_tabs{
+    display: flex;
+    padding: 0 0 0 100px;
+}
+.right_side{
+    height: 500px;
+    
+
+}
+.title_awesome{
+    
+    padding: 53px 105px;
+    margin:50px 0 0 0;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 2.25em;
+    font-weight: 400;
+    line-height: 42px;
+}
+.line{
+    margin: auto;
+    width: 170px;
+    border: 1px solid #EC7979;
+}
+.text_awesome{
+    margin:38px 0 0 0 ;
+
+}
+.text_awesome p{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 21px;
+    color: #86878B;
+    text-align: center;
+}
+.content_awesome{
+    display: flex;
+    margin:70px 171px 58px 171px;
+}
+.box_awesome{
+    text-align: center;
+
+}
+.title_box{
+    padding: 17px 110px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+}
+.text_box{
+    margin: 8px 30px 0 0;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+
+
