@@ -7,29 +7,30 @@
     src: url(/Axit/src/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 *{ 
+    font-size:14px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .container{
-    min-width: 1170px;
+    max-width: 1170px;
     padding: 0 15px;
     
 }
 
 /* START STYLE TABS MENU */
-
+.section_tabs{
+    padding: 100px 170px 0 170px;
+}
 .menu_tabs{
-    
-    min-width: 1170px;
+    max-width: 1170px;
     display: flex;
     font-family: 'Open Sans';
     font-weight: 400;
-    font-size: 0.875em;
+    font-size: 0.875rem;
     line-height: 19px;
     text-transform: uppercase;
     color: #333333;
-    margin: 99px 170px 0 170px;
     text-align: center;
 }
 .tab{
@@ -45,33 +46,36 @@
     
 }
 .tab.empty{
-    width: 550px;
+    width:540px;
 }
+
 .content_tabs{
-    margin: 0 170px;
     border: 1px solid #C6CBCD;
     border-top: none;
+    display: flex;
+    padding-left: 100px;
 }
 .title_tabs{
     padding: 40px 0;
     font-family: 'Open Sans';
     font-weight: 700;
-    font-size: 1.875em;
+    font-size: 1.875rem;
     line-height: 41px;
     color: #000000;
 }
-.text_tabs{
-    
-    margin: 27px 30px 0 0;
-}
-.text_tabs p{
+
+.content_field{
+    padding-right: 30px;
     text-align: left;
     font-family: 'Raleway';
     font-weight: 400;
-    font-size: 1.125em;
+    font-size: 1.125rem;
     line-height: 21px;
     color: #000000;
 
+}
+.first_text{
+    padding: 27px 0 22px 0 ;
 }
 .btn_tabs{
     margin-top: 27px;
@@ -81,7 +85,7 @@
     display: block;
     font-family: 'Open Sans';
     font-weight: 600;
-    font-size: 1.125em;
+    font-size: 1.125rem;
     line-height: 25px;
     text-align: center;
     text-transform: capitalize;
@@ -92,16 +96,13 @@
 .btn_tabs:hover{
     background-color: #AB4949;
 }
-.content_tabs{
-    display: flex;
-    padding: 0 0 0 100px;
+
+.pic_tabs img{
+    display: block;
+
+  
 }
-.right_side{
-    object-fit: cover;
-}
-.right_side img{
-    height: 100%;
-}
+
 
 
 /* END STYLE SECTION TABS*/ 
@@ -109,37 +110,34 @@
 
 /* START STYLE SECTION AWESOME*/ 
 
-
+.section_awesome{
+padding: 50px 170px;
+}
 .title_awesome{
-    
-    padding: 53px 105px;
-    margin:50px 0 0 0;
+    padding: 54px 0;
     text-align: center;
     font-family: 'Raleway';
-    font-size: 2.25em;
+    font-size: 2.25rem;
     font-weight: 400;
     line-height: 42px;
 }
 .line{
     margin: auto;
     width: 170px;
-    border: 1px solid #EC7979;
+    border: 0.5px solid #EC7979;
 }
-.text_awesome{
-    margin:38px 0 0 0 ;
-
-}
-.text_awesome p{
+.section_awesome p{
+    padding:38px 0 0 0 ;
     font-family: 'Raleway';
     font-weight: 400;
-    font-size: 1.125em;
+    font-size: 1.125rem;
     line-height: 21px;
     color: #86878B;
     text-align: center;
 }
 .content_awesome{
     display: flex;
-    margin:70px 171px 58px 171px;
+    padding:71px 0 0 0;
 }
 .box_awesome{
     text-align: center;
@@ -149,16 +147,16 @@
     padding: 17px 110px;
     font-family: 'Open Sans';
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     line-height: 33px;
     text-align: center;
     color: #000000;
 }
 .text_box{
-    margin: 8px 30px 0 0;
+    padding: 8px 30px 0 0;
     font-family: 'Raleway';
     font-weight: 400;
-    font-size: 1.125em;
+    font-size: 1.125rem;
     line-height: 21px;
     text-align: center;
     color: #000000;
@@ -178,28 +176,30 @@
     padding: 55px 0;   
     font-family: 'Raleway';
     font-weight: 400;
-    font-size: 2.25em;
+    font-size: 2.25rem;
     line-height: 42px;
     text-transform: uppercase;
     color: #000000;
     text-align: center;
 }
-.text_price{
-    margin: 40px 0 0 0 ;
+.section_price p{
+    padding: 40px 0 0 0 ;
     font-family: 'Raleway';
     font-weight: 400;
-    font-size: 1.125em;
+    font-size: 1.125rem;
     line-height: 21px;
     text-align: center;
     color: #86878B;
 }
 
 .price_cards{
-    margin: 79px 0 0 0;  
+    padding: 79px 0 0 0;  
     display: flex; 
 }
 
-.card:nth-child(2){
+.card:hover{
+    cursor: pointer;
+    transition: 1s;
     margin: -20px 30px 0 30px;
     filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
 
@@ -211,7 +211,7 @@
     border: 2px solid #F5F5F5;
     font-family: 'Open Sans';
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     line-height: 33px;
     text-align: center;
     text-transform: capitalize;
@@ -224,7 +224,7 @@
     border: 2px solid #F5F5F5;
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 2.25em;
+    font-size: 2.25rem;
     line-height: 42px;
     text-align: center;
     color: #FFFFFF;
@@ -235,7 +235,7 @@
     border: 2px solid #F5F5F5;
     font-family: 'Raleway';
     font-weight: 400;
-    font-size: 1.125em;
+    font-size: 1.125rem;
     line-height: 21px;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
@@ -246,10 +246,271 @@
     border: 2px solid #F5F5F5;
     font-family: 'Raleway';
     font-weight: 400;
-    font-size: 1.125em;
+    font-size: 1.125rem;
     line-height: 21px;
     text-align: center;
     text-transform: capitalize;
     color: #86878B;
 }
 /* END STYLE PRICE SECTION*/
+
+
+/* START STYLE CUSTOMERS*/
+
+
+.section_customers{
+    padding: 50px 170px 64px 170px ;
+}
+.title_customers{
+    
+    padding: 54px 0;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.section_customers p{
+    padding: 40px 0 0 0 ;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 21px;
+    text-align: center;
+    color: #86878B;
+}
+
+.content_customers{
+    padding: 83px 15px 0 15px;
+    display: flex;
+}
+
+.item_customer:nth-child(2){
+    padding: 0 30px;
+
+}
+.text_customer{
+    padding: 38px 20px;
+    background: #E2E2E2;
+    border-radius: 10px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 21px;
+    text-align: center;
+    color: #86878B;
+}
+
+.triangle{
+    margin: 0 0 0 70px;
+    width: 0;
+    height: 0;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    border-top: 30px solid #E2E2E2 ;
+}
+.customer{
+    display: flex;
+    padding-top: 46px;
+}
+.customer img{
+    width: 70px;
+    height: 70px;
+}
+.about_customer{
+    padding-left:30px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.name_customer{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 33px;
+    text-transform: capitalize;
+    color: #000000;
+    text-align: center;
+}
+
+.profession_customer{
+    padding-top: 15px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 21px;
+    color: #000000;
+   
+}
+/*END STYLE CUSTOMERS*/
+
+
+/*START STYLE SECTION DESIGN*/
+
+.section_design{
+   padding: 50px 170px;
+   background: no-repeat url('/Axit/src/img/background.png');
+}
+
+.title_design{
+    padding: 58px 0;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.line.white{
+    margin: auto;
+    width: 170px;
+    border: 1px solid #FFFFFF;
+}
+.text_design{
+    padding-top: 40px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn_design{
+    margin: 73px 0 0 400px;
+    width: 370px;
+    height: 58px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #FFFFFF;
+}
+
+.btn_design:hover{
+    color: #EC7979;
+    border: 2px solid #EC7979;
+}
+/*END STYLE SECTION DESIGN*/
+
+
+/*START STYLR SECTION CONTACTS*/
+.section_contacts{
+    padding: 50px 170px;
+}
+
+.title_contacts{
+    padding: 54px 0;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.section_contacts p{
+    padding-top: 40px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 21px;
+    text-align: center;
+    color: #86878B;
+}
+
+.content_contacts{
+    padding-top: 39px;
+    display: flex;
+    
+}
+
+.data_contacts{
+    padding-right: 30px;
+    width: 50%;
+}
+
+.text_field{
+    padding: 50px 0 16px 0;
+    display: block;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid #BDBDBD;
+    cursor: pointer;
+}
+.message_contacts{
+    width: 50%;
+}
+.text_message{
+    display: block;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid #BDBDBD;
+    cursor: pointer;
+    padding: 50px 0 182px 0;
+}
+input::placeholder{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 19px;
+    color: #BDBDBD;
+}
+
+.btn_contacts{
+    margin: 50px 0 0 400px;
+    width: 370px;
+    height: 58px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background-color: #EC7979;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.btn_contacts:hover{
+    background: #AB4949;
+}
+/*END STYLE SECTION CONTACTS*/
+
+/*START STYLE FOOTER*/
+.footer{
+    padding: 40px 480px;
+    background-color: #000000;
+}
+.footer img{
+    width: 53px;
+    height: 53px;
+}
+.list_links{
+    display: flex;
+}
+.list_links li:not(:last-child){
+    padding-right: 38px;
+}
+.footer p{
+    padding: 27px 0 0 160px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+/*END STYLE FOOTER*/
