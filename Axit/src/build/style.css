@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Raleway';
-    src: url('/src/fonts/raleway/Raleway-VariableFont_wght.ttf');
+    src: url('/fonts/raleway/Raleway-VariableFont_wght.ttf');
     font-family: 'Open Sans';
-    src: url('/src/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+    src: url('/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
 }
 
 *{ 
@@ -139,10 +139,14 @@
 }
 
 @media only screen and (max-width:350px){
+   
     .container.header{
         padding: 0 0 0 5.7%;
     }
-   
+   .pic_logo{
+    position: sticky;
+    z-index: 3;
+   }
     .pic_logo img{
         max-width: 130px;
         max-height: 56px;
@@ -182,7 +186,7 @@
 
 .section_banner{
     padding: 207px 170px 185px 170px;
-    background:url('/src/img/bg_banner.png');
+    background:url('/img/bg_banner.png');
     }
 .field_banner{
     width: 100%;
@@ -1022,10 +1026,10 @@ padding: 50px 170px;
 }
 
 .content_customers{
-    width: 100%;
     display: flex;  
     justify-content: space-between;
 }
+
 .item_customer{
     max-width: 370px;
 }
@@ -1087,9 +1091,7 @@ padding: 50px 170px;
    
 }
 
-.slide_dots{
-    display: none;
-}
+    
 
 @media only screen and (max-width:1100px){
     .section_customers{
@@ -1158,39 +1160,25 @@ padding: 50px 170px;
     .section_customers p{
         padding: 24px 0 0 0;
 }
-    .content_customers{
-        display: inline-block;
-    }
+    
     .item_customer{
+        width: 100%;
         padding-top: 24px;
-        max-width: 288px;
     }
- 
+   
     .triangle{
         margin: 0 0 0 64px;
         border-top: 20px solid #E2E2E2 ;
     }  
     .customer{
-        padding:42px 0 0 0;
+        padding:22px 0 0 0;
     }  
     .customer img{
         max-width: 57px;
         max-height: 57px;
     } 
-    .slide_dots {
-        display: flex;
-        justify-content: center;
-    }
-    .dot{
-        width: 9.49px;
-        height: 9.49px;
-        border: 1px solid #86878B;
-        border-radius: 9px;
-    }
-    .dot:nth-child(2){
-        margin: 0 25px;
-    }
-    
+   
+   
 }
 /*END STYLE CUSTOMERS*/
 
@@ -1199,7 +1187,7 @@ padding: 50px 170px;
 
 .section_design{
    padding: 50px 170px;
-   background: no-repeat url('/src/img/background.png');
+   background: no-repeat url('/img/background.png');
 }
 
 
@@ -1234,8 +1222,8 @@ padding: 50px 170px;
 .btn_design{
     display: block;
     margin: 0 auto;
-    width: 370px;
-    height: 58px;
+    min-width: 370px;
+    min-height: 58px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
@@ -1274,7 +1262,7 @@ padding: 50px 170px;
         line-height: 16px;
     }
     .btn_design{
-        width: 318px;
+        min-width: 318px;
     }
 
 }
@@ -1292,7 +1280,7 @@ padding: 50px 170px;
        
     }
     .btn_design{
-        width: 287px;
+        min-width: 287px;
     }
 }
 /*END STYLE SECTION DESIGN*/
